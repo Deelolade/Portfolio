@@ -1,0 +1,294 @@
+*{
+  margin: 0;
+  padding: 0;
+  /* background: linear-gradient(to right, #ee6c4d,#6E44FF ); */
+  background-color:#0D1B3E ;
+  /* scrollbar-width: 3rem; */
+  box-sizing: border-box;
+}
+@font-face{
+  font-family:'Acorn';
+  src: url(./fonts/Acorn-Fonts/Acorn-Bold.woff2);
+  font-weight: bolder;
+}
+@font-face {
+  font-family: 'Acorn-medium';
+  src: url(./fonts/Acorn-Fonts/Acorn-Medium.woff2);
+  font-weight: bold;
+}
+@font-face {
+  font-family: 'Acorn-italics';
+  src: url(./fonts/Acorn-Fonts/Acorn-Medium.woff2);
+  font-style: italic;
+}
+.Main-Navbar{
+  width: 80vw;
+  margin: 0 ;
+  text-align: center;
+  /* background-color: #936BFF; */
+}
+.Nav-list{
+  color: #f7f5fb;
+  height: 7vh;
+  width: clamp(36rem, 10vw, 50rem);
+  line-height: 7vh;
+  justify-content: center;
+  align-content:space-between ;
+  border: #6E44FF 2px solid;
+  border-radius: 50px;
+  position: relative;
+  z-index: 1000;
+}
+.Nav-list a{
+  color: #6E44FF;
+}
+.Nav-list a:hover{
+  color: #0D1B3E;
+  background-color: #6E44FF;
+}
+.Nav-list li{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.Nav-items {
+  color: black; 
+  transition: background-color .3s ease-in-out;
+}
+
+.Nav-items.active {
+  background-color: #936BFF;
+  color: #0D1B3E; 
+}
+.Header{
+  height: 90vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.Header h1{
+  margin-top: 12rem;
+  color: #6E44FF;
+  text-align: center;
+  font-size: clamp(5rem,8vw,15rem);
+  font-weight: bolder;
+  font-family: 'Acorn',sans-serif;
+}
+.animation{
+  width: 15rem;
+  height: 15rem;
+  margin: auto;
+  text-align: center;
+}
+.home-text{
+  color: #6E44FF;
+  text-align: center;
+  font-size: 28px;
+  font-family: 'Acorn-medium', sans-serif;
+}
+.About-section{
+  width: 100vw;
+  /* height: 100vh; */
+}
+.About-Me{
+  font-family:"Acorn", sans-serif ;
+  font-weight: bolder;
+  font-size: 80px;
+  color: #6E44FF;
+}
+.About-Image{
+  max-width: 100%;
+  position: relative;
+  height: auto;
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 0 200px 0 200px ;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.About-Image:hover .overlay{
+  opacity: 1;
+}
+.About-text{
+  font-size: 25px;
+  color: #6E44FF;
+  line-height: 45px;
+  font-family: 'Acorn-medium',sans-serif;
+  font-style: italic;
+}
+.About-heading{
+  font-family: 'Acorn',sans-serif;
+  color: #6E44FF;
+  font-size: 75px;
+  font-style: normal;
+}
+.sticky-navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transition: top 0.9s ease-in-out;
+  z-index: 1000; /* Ensure it stays on top */
+}
+
+.hide {
+  top: -115px; /* Adjust based on your navbar height */
+}
+
+.show {
+  top: 0;
+}
+.navbar {
+  position: fixed; /* Fixed position */
+  width: 100%; /* Full width */
+  z-index: 1000; /* Ensure it stays above other content */
+}
+.social-icons{
+  height: 7vh;
+  width: 8rem;
+}
+.github{
+  height: 2rem;
+  width: 2rem;
+  color: #6E44FF;
+}
+.github:hover{
+  color: #ee6c4d;
+  transform: scale(1.1);
+  transition: .3s ease-in-out;
+}
+.linkedIn{
+  color: #6E44FF;
+  height: 2rem;
+  width: 2rem;
+
+}
+.linkedIn:hover{
+  color: #ee6c4d;
+  transform: scale(1.1);
+  transition: .3s ease-in-out;
+}
+.Total-Efficiency{
+  height: 80vh;
+  max-width: 100;
+  /* background-color: #836BFF; */
+} 
+.React{
+  width: 35rem;
+  height: 5rem;
+  border-radius: 50px;
+  line-height: 5rem;
+  margin-left: 60rem;
+  color: #ee6c4d;
+}
+.Javascript{
+  width: 65rem;
+  height: 5rem;
+  border-radius: 50px;
+  line-height: 5rem;
+  margin-left: 40rem;
+}
+.Bootstrap{
+  width: 50rem;
+  height: 5rem;
+  border-radius: 50px;
+  line-height: 5rem;
+  margin-left: 20rem;
+}
+.Wordpress{
+  height: 5rem;
+  width: 50rem;;
+  border-radius: 50px;
+  line-height: 5rem;
+  margin-left: 5rem;
+}
+.Technology{
+  height: 5rem;
+  width: 50rem;;
+  border-radius: 50px;
+  line-height: 5rem;
+  margin-left: 30rem;
+}
+
+.React:hover{
+  transform: scale(1.1);
+  transition:.5s ease-in-out  ;
+}
+.Javascript:hover{
+  transform: scale(1.1);
+  transition:.5s ease-in-out  ;
+}
+.Bootstrap:hover{
+  transform: scale(1.1);
+  transition:.5s ease-in-out  ;
+}
+.Wordpress:hover{
+  transform: scale(1.1);
+  transition:.5s ease-in-out  ;
+}
+.Technology:hover{
+  transform: scale(1.1);
+  transition:.5s ease-in-out  ;
+}
+.Efficiency-text{
+  font-size: 20px;
+  border-radius: 50px;
+  color:#0D1B3E ;
+  /* background-color: #836BFF; */
+  background: linear-gradient(to right,#6E44FF , #ee6c4d);
+  font-weight: bolder;
+  font-family: 'Acorn',sans-serif;
+}
+.React-percent{
+  font-size: 20px;
+  border-radius: 50px;
+  color:#0D1B3E;
+  background: none;
+  margin: 0  0 0 11.5rem ;
+  font-family: 'Acorn',sans-serif;
+}
+.Javascript-percent{
+  font-size: 20px;
+  border-radius: 50px;
+  color:#0D1B3E;
+  background: none;
+  margin: 0  0 0 39rem ;
+  font-family: 'Acorn',sans-serif;
+}
+.Bootstrap-percent{
+  font-size: 20px;
+  border-radius: 50px;
+  color:#0D1B3E;
+  background: none;
+  margin: 0  0 0 24.5rem ;
+  font-family: 'Acorn',sans-serif;
+}
+.Wordpress-percent{
+  font-size: 20px;
+  border-radius: 50px;
+  color:#0D1B3E;
+  background: none;
+  margin: 0  0 0 23.5rem ;
+  font-family: 'Acorn',sans-serif;
+}
+.Technology-percent{
+  font-size: 20px;
+  border-radius: 50px;
+  color:#0D1B3E;
+  background: none;
+  margin: 0  0 0 19rem ;
+  font-family: 'Acorn',sans-serif;
+}
