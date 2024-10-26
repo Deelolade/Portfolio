@@ -6,6 +6,9 @@ import Downwards from '../animation/downwards.json'
 import Lottie from 'lottie-react'
 import About from '../components/Information'
 import Efficiency from '../components/Efficiency'
+import Works from '../components/Works'
+import Form from '../components/Form'
+
 
 const Home = () => {
     useEffect(()=>{
@@ -26,6 +29,8 @@ return (
         </div>
         <About/>
         <Efficiency/>
+        <Works/>
+        <Form/>
     </div>
     )
 }

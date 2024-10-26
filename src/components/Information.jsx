@@ -21,8 +21,8 @@ const About = () => {
                         <div className="p-5 ms-5 pe-0   ">
                             <img src={ImageOne} alt="" className='About-Image'  data-aos="fade-up"/>
                         </div>
-                            <div class="overlay">
-                                <div class="text">Your Text Here</div>
+                            <div className="overlay">
+                                <div className="text">Your Text Here</div>
                             </div>
                     </div>
                     <div className="col-7">
