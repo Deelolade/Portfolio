@@ -2,9 +2,8 @@
   margin: 0;
   padding: 0;
   /* background: linear-gradient(to right, #ee6c4d,#6E44FF ); */
-  background-color:#0D1B3E ;
-  /* scrollbar-width: 3rem; */
   box-sizing: border-box;
+  background-color:#0D1B3E ;
 }
 @font-face{
   font-family:'Acorn';
@@ -135,6 +134,70 @@
   color: #6E44FF;
   font-size: 75px;
   font-style: normal;
+}
+.Works-section{
+  width: 100vw;
+  /* height: 100vh; */
+}
+.Works{
+  font-family:"Acorn", sans-serif ;
+  font-weight: bolder;
+  font-size: 80px;
+  color: #6E44FF;
+}
+.swiper-container {
+  width: 240px;
+  height: 320px;
+
+}
+
+.SwiperSlide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+}
+.slider{  
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mySwiper{
+  width: 600px;
+  height: 600px;
+  background-color: #fff;
+  position:relative;
+}
+.mySwiper::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(238, 108, 77, 0.5); /* #ee6c4d with 50% opacity */
+  z-index: 1; /* Ensure it's behind the content */
+}
+/* .SwiperSlide:nth-child(1n) {
+}
+
+.SwiperSlide:nth-child(2n) {
+}
+
+.SwiperSlide:nth-child(3n) {
+  
+} */
+
+
+.SwiperSlide:nth-child(4n) {
+  background-color: none;
+}
+.SwiperImage{
+  max-width: 100%;
+  max-height: 600px;
+  object-fit: cover;
 }
 .sticky-navbar {
   position: fixed;
@@ -292,3 +355,74 @@
   margin: 0  0 0 19rem ;
   font-family: 'Acorn',sans-serif;
 }
+.form{
+  background-color: #6E44FF;
+}
+.form-main{
+  background-color: #6E44FF;
+}
+.form-message{
+  background-color: #6E44FF;
+  text-align: center;
+}
+.form-input{
+  background-color: #6E44FF;
+}
+.form-message{
+  background-color: #6E44FF;
+  width: 45%;
+  margin: auto;
+}
+.form-rule{
+  width: 20vw;
+  height: 1px;
+}
+.Form-container{
+  width: 100vw;
+  height: 90vh;
+  background-color: #6E44FF;
+}
+.Form-header  {
+  background-color: #6E44FF;
+  text-align: center;
+}
+.Form-header h1{
+  background-color: #6E44FF;
+  font-size: 3.2em;
+}
+.Form-header p{
+  background-color: #6E44FF;
+  font-size: 1.6em;
+}
+.form-main{
+  justify-content: center;
+}
+.form-type{
+  background-color: #6E44FF;
+  color: #0D1B3E;
+  font-size: 18px;
+  border: none;
+  outline: none;
+}
+.form-type-message{
+  background-color: #6E44FF;
+  color: #0D1B3E;
+  font-size: 18px;
+  border: none;
+  overflow-y: auto;
+  outline: none;
+}
+.form-label{
+  background-color: #6E44FF;
+  color: #0D1B3E;
+  font-size: 18px;
+}
+input::placeholder {
+  color: #0D1B3E; 
+  opacity: 1;  
+}
+textarea::placeholder {
+  color: #0D1B3E; 
+  opacity: 1;  
+}
+
