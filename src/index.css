@@ -425,4 +425,32 @@ textarea::placeholder {
   color: #0D1B3E; 
   opacity: 1;  
 }
+input{
+  background-color: #6E44FF;
+}
+/* styles.css */
+.custom-swal {
+  background-color: #f8d7da; /* Popup background color */
+  color: #721c24; /* Text color */
+}
+
+.custom-swal .swal2-title {
+  color: #721c24; /* Title color */
+}
+
+.custom-swal .swal2-confirm {
+  background-color: #28a745; /* Confirm button color */
+  color: white; /* Confirm button text color */
+}
+
+/* Change icon color */
+.custom-swal .swal2-icon {
+  border-color: #721c24; 
+  background-color: #fff;/* Border color for the icon */
+}
+
+.custom-swal .swal2-icon-warning {
+  color: #721c24; /* Change warning icon color */
+}
+
 
