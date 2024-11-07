@@ -7,6 +7,7 @@ import { FaLinkedin } from "react-icons/fa";
 const Header = () => {
     const location = useLocation();
     const [clicked, setClicked] = useState('');
+    const [click, setClick] = useState(false);
 
     const [show, setShow] = useState(true);
     const [lastScrollY, setLastScrollY] = useState(0);
@@ -35,11 +36,12 @@ const Header = () => {
         setClicked(pathMap[location.pathname] || ''); 
     })
     return (
-        <div className={`sticky-navbar ${show ? 'show' : 'hide'}`}>
-            <nav className=" navbar navbar-expand d-flex px-5">
-                <div className="Main-Navbar ms-auto   " >
-                    <ul className='d-flex mt-3 Nav-list mx-auto' >
+        <div className={`sticky-navbar ${show ? 'show' : 'hide'}`} style={{backgroundColor:"#0D1B3E",}}>
+            <nav className=" navbar ms-auto pe-4">
+                <div className="Main-Navbar" >
+                    <ul className='d-inline-flex mt-3 Nav-list mx-auto flex-1' >
                         <li>
+                            
                             <Link
                                 className={`px-3 py-2 rounded-5 navbar-brand Nav-items ms-4 me-4 fw-bolder ${clicked === 'Home' ? 'active' : ''}`}
                                 to="/"
@@ -68,7 +70,7 @@ const Header = () => {
                         </li>
                     </ul>
                 </div>
-                <div className="social-icons d-flex  px-2">
+                <div className="social-icons d-flex  pt-2" >
                     <div className="github me-3 ">
                         <a href="https://github.com/deelolade" target='_blank'>
                         <BsGithub className='github' />
