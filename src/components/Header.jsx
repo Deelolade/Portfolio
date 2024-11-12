@@ -36,7 +36,7 @@ const Header = () => {
         setClicked(pathMap[location.pathname] || ''); 
     })
     return (
-        <div className={`sticky-navbar ${show ? 'show' : 'hide'}`} style={{backgroundColor:"#0D1B3E",}}>
+        <div className={`sticky-navbar ${show ? 'show' : 'hide'}`} style={{backgroundColor:"#0D1B3E",maxWidth:"100%"}}>
             <nav className=" navbar ms-auto pe-4">
                 <div className="Main-Navbar" >
                     <ul className='d-inline-flex mt-3 Nav-list mx-auto flex-1' >
