@@ -11,7 +11,7 @@ const Header = () => {
 
     const [show, setShow] = useState(true);
     const [lastScrollY, setLastScrollY] = useState(0);
-    
+
     const handleLinkClick = (name) => {
         setClicked(name);
     };
@@ -27,21 +27,21 @@ const Header = () => {
             window.removeEventListener('scroll', handleScroll);
         };
     }, [lastScrollY]);
-    useEffect(()=> {
+    useEffect(() => {
         const pathMap = {
             '/': 'Home',
             '/about': 'About',
             '/works': 'Works'
         };
-        setClicked(pathMap[location.pathname] || ''); 
+        setClicked(pathMap[location.pathname] || '');
     })
     return (
-        <div className={`sticky-navbar ${show ? 'show' : 'hide'}`} style={{backgroundColor:"#0D1B3E",}}>
+        <div className={`sticky-navbar ${show ? 'show' : 'hide'}`} style={{ backgroundColor: "#0D1B3E", maxWidth: "100%" }}>
             <nav className=" navbar ms-auto pe-4">
                 <div className="Main-Navbar" >
                     <ul className='d-inline-flex mt-3 Nav-list mx-auto flex-1' >
                         <li>
-                            
+
                             <Link
                                 className={`px-3 py-2 rounded-5 navbar-brand Nav-items ms-4 me-4 fw-bolder ${clicked === 'Home' ? 'active' : ''}`}
                                 to="/"
@@ -69,19 +69,20 @@ const Header = () => {
                             </Link>
                         </li>
                     </ul>
-                </div>
-                <div className="social-icons d-flex  pt-2" >
-                    <div className="github me-3 ">
-                        <a href="https://github.com/deelolade" target='_blank'>
-                        <BsGithub className='github' />
-                        </a>
+                    <div className="social-icons d-flex  pt-2" >
+                        <div className="github me-3 ">
+                            <a href="https://github.com/deelolade" target='_blank'>
+                                <BsGithub className='github' />
+                            </a>
+                        </div>
+                        <div className="linkedIn ms-1">
+                            <a href="https://linkedin.com/in/deelolade" target='_blank'>
+                                <FaLinkedin className='linkedIn' />
+                            </a>
+                        </div>
                     </div>
-                    <div className="linkedIn ms-1">
-                        <a href="https://linkedin.com/in/deelolade" target='_blank'>
-                        <FaLinkedin className='linkedIn'/>
-                        </a>
-                    </div>
                 </div>
+
             </nav>
         </div>
     );

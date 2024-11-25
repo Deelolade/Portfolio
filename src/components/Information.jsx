@@ -17,8 +17,8 @@ const About = () => {
             <h1 className='About-Me ms-5 ps-5' >About Me</h1>
             </div>
             <div className="About-container">
-                <div className="row px-2">
-                    <div className="col-5 ">
+                <div className="row px-2  About-container justify-contents-space-around">
+                    <div className=" col-sm-12 col-md-12 col-lg-5 About-col">
                         <div className="p-5  pe-0 About-Image  ">
                             <img src={ImageOne} alt="" className='About-Img'  data-aos="fade-up"/>
                             <div className="about-overlay mt-5 ms-5 pb-5">
@@ -30,10 +30,10 @@ const About = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="col-7 mt-5">
-                        <div className="p-4  mt-3"data-aos="fade-up">
+                    <div className=" col-sm-12 col-md-12 col-lg-7 mt-5 About-col">
+                        <div className="p-4  mt-3 About-para"data-aos="fade-up">
                         <h1 className='About-heading mb-4'>I am a Frontend Developer <br />Working from Lagos,Nigeria.</h1> 
-                            <p className='About-text pe-4' >Whether I’m working on solo projects or contributing to larger teams, I prioritize clear communication and adaptability to meet evolving project requirements.I am committed to lifelong learning and continuously improving my skills. I enjoy tackling complex challenges, optimizing processes, and keeping up with industry trends.I’m excited to connect with like-minded individuals and contribute to projects that make a difference! <br /> <br />I'm eager to learn and explore technologies like PHP and databases, which will allow me to create seamless integrations and more robust solutions.Collaboration is essential to me; I thrive in team environments where creativity and problem-solving flourish. </p>
+                        <p className='About-text pe-4' >Whether I’m working on solo projects or contributing to larger teams, I prioritize clear communication and adaptability to meet evolving project requirements.I am committed to lifelong learning and continuously improving my skills. I enjoy tackling complex challenges, optimizing processes, and keeping up with industry trends.I’m excited to connect with like-minded individuals and contribute to projects that make a difference! <br /> <br />I'm eager to learn and explore technologies like PHP and databases, which will allow me to create seamless integrations and more robust solutions.Collaboration is essential to me; I thrive in team environments where creativity and problem-solving flourish. </p>
                         </div>
                     </div>
                 </div>

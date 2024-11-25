@@ -24,12 +24,12 @@ return (
                     <p className=''data-aos="fade-down">I’m a passionate and driven Front-end developer who thrives on  transforming<br />  innovative ideas into reality through code.</p>
                 </div>
             <div className="animation mt-3">
-                <Lottie animationData={Downwards} style={{ width: '100%', height: '100%',color:"red" }}/>
+                <Lottie animationData={Downwards} style={{ width: '100%', height: '100%',}}/>
             </div>
         </div>
-        <About/>
-        <Efficiency/>
-        <Works/>
+        {/* <About/> */}
+        {/* <Efficiency/> */}
+        {/* <Works/> */}
         <Form/>
     </div>
     )

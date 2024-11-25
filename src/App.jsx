@@ -7,6 +7,7 @@ import Footer from './components/Footer';
 
 
 const App =()=> {
+    
     return (
         <Router>
             <Header />
@@ -15,8 +16,9 @@ const App =()=> {
                 <Route path="/about" element={<About />} />
                 <Route path="/works" element={<Works />} />
             </Routes>
-            <Footer/>
+            {/* <Footer/> */}
         </Router>
+        
     );
 }
 export default App;
