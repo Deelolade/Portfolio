@@ -16,7 +16,7 @@ const App =()=> {
                 <Route path="/about" element={<About />} />
                 <Route path="/works" element={<Works />} />
             </Routes>
-            {/* <Footer/> */}
+            <Footer/>
         </Router>
         
     );

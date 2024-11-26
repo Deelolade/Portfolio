@@ -174,12 +174,16 @@ p {
 }
 
 .About-text {
-  font-size: 25px;
+  font-size: 20px;
   color: #6E44FF;
   line-height: 45px;
   font-family: 'Acorn-medium', sans-serif;
   background-color: none;
-  font-style: italic;
+  font-weight: lighter;
+  text-align: left;
+}
+.about-text-sm{
+  display: none;
 }
 
 .About-heading {
@@ -606,9 +610,12 @@ textarea::placeholder {
   border: 2px #6E44FF solid;
   background-color: #6E44FF;
 }
-
+.footer{
+  background-color: #936BFF;
+  /* height: 31.25rem; */
+}
 .Footer-section {
-  height: 31.25rem;
+  width: 100%;
   max-width: 100%;
   background-color: #936BFF;
 }
@@ -642,10 +649,18 @@ h6 {
 
 .Footer-bottom {
   background-color: #936BFF;
+  width: 100%;
+  /* height: 10rem; */
 }
 
 .Footer-bottom p {
   background-color: #936BFF;
+}
+.footer-github{
+  display: none;
+}
+.footer-linkedIn{
+  display: none;
 }
 
 @media (max-width:768px) {
@@ -675,14 +690,66 @@ h6 {
     background-color: #6E44FF;
     font-size: 3em;
   }
-  
-  .Form-header p {
-    font-size: 1.2rem;
-  }
-  
+.Form-header p {
+  font-size: 1.2rem;
+}
 .form-main {
   background-color: #6E44FF;
   width: 45%;
   margin: 0 5rem  ;
+}
+.footer{
+  width: 100%;
+  background-color: #936BFF;
+}
+.footer-icons{
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 0 0 0 ;
+  justify-content: center;
+}
+.footer-github{
+  color: #0D1B3E;
+  display: block;
+}
+.footer-github:hover {
+  color: #ee6c4d;
+  transform: scale(1.1);
+  transition: .3s ease-in-out;
+}
+.footer-linkedIn{
+  display: block;
+}
+.About-heading{
+  text-align: center;
+}
+.About-text{
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+}
+.About-text {
+ display: none;
+}
+.about-text-sm{
+  display: block;
+  font-size: 18px;
+  color: #6E44FF;
+  line-height: 40px;
+  font-family: 'Acorn-medium', sans-serif;
+  background-color: none;
+  font-weight: lighter;
+  text-align: left;
+}
+.About-Image {
+  position: relative;
+  display: inline-block;
+}
+
+.About-Img {
+  display: block;
+  width: 100%;
+  /* height: 45rem; */
+  border-radius: 0 10rem;
 }
 }
