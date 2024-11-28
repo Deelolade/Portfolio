@@ -28,8 +28,8 @@ return (
             </div>
         </div>
         <About/>
-        {/* <Efficiency/> */}
-        {/* <Works/> */}
+        <Efficiency/>
+        <Works/>
         <Form/>
     </div>
     )

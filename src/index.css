@@ -297,16 +297,18 @@ p {
 }
 
 .React {
-  width: 35rem;
+  width: 45rem;
   height: 5rem;
   border-radius: 50px;
+  background: linear-gradient(to right, #6E44FF, #ee6c4d);
   line-height: 5rem;
-  margin-left: 60rem;
+  margin-left: 50rem;
 }
 
 .Javascript {
   width: 65rem;
   height: 5rem;
+  background: linear-gradient(to right, #6E44FF, #ee6c4d);
   border-radius: 50px;
   line-height: 5rem;
   margin-left: 40rem;
@@ -315,6 +317,7 @@ p {
 .Bootstrap {
   width: 50rem;
   height: 5rem;
+  background: linear-gradient(to right, #6E44FF, #ee6c4d);
   border-radius: 50px;
   line-height: 5rem;
   margin-left: 20rem;
@@ -323,8 +326,8 @@ p {
 .Wordpress {
   height: 5rem;
   width: 50rem;
-  ;
   border-radius: 50px;
+  background: linear-gradient(to right, #6E44FF, #ee6c4d);
   line-height: 5rem;
   margin-left: 5rem;
 }
@@ -332,9 +335,9 @@ p {
 .Technology {
   height: 5rem;
   width: 50rem;
-  ;
   border-radius: 50px;
   line-height: 5rem;
+  background: linear-gradient(to right, #6E44FF, #ee6c4d);
   margin-left: 30rem;
 }
 
@@ -367,57 +370,10 @@ p {
   font-size: 20px;
   border-radius: 50px;
   color: #0D1B3E;
-  /* background-color: #836BFF; */
   background: linear-gradient(to right, #6E44FF, #ee6c4d);
   font-weight: bolder;
   font-family: 'Acorn', sans-serif;
 }
-
-.React-percent {
-  font-size: 20px;
-  border-radius: 50px;
-  color: #0D1B3E;
-  background: none;
-  margin: 0 0 0 11.5rem;
-  font-family: 'Acorn', sans-serif;
-}
-
-.Javascript-percent {
-  font-size: 20px;
-  border-radius: 50px;
-  color: #0D1B3E;
-  background: none;
-  margin: 0 0 0 39rem;
-  font-family: 'Acorn', sans-serif;
-}
-
-.Bootstrap-percent {
-  font-size: 20px;
-  border-radius: 50px;
-  color: #0D1B3E;
-  background: none;
-  margin: 0 0 0 24.5rem;
-  font-family: 'Acorn', sans-serif;
-}
-
-.Wordpress-percent {
-  font-size: 20px;
-  border-radius: 50px;
-  color: #0D1B3E;
-  background: none;
-  margin: 0 0 0 23.5rem;
-  font-family: 'Acorn', sans-serif;
-}
-
-.Technology-percent {
-  font-size: 20px;
-  border-radius: 50px;
-  color: #0D1B3E;
-  background: none;
-  margin: 0 0 0 19rem;
-  font-family: 'Acorn', sans-serif;
-}
-
 .form {
   background-color: #6E44FF;
 }
@@ -440,7 +396,7 @@ p {
 }
 
 .form-rule {
-  width: 20rem;
+  max-width: 100%;
   height: 1px;
 }
 
@@ -507,6 +463,7 @@ textarea::placeholder {
 }
 
 .Form-button {
+  height: 3.5rem;
   position: relative;
   width: 12rem;
   border: none;
@@ -565,6 +522,53 @@ textarea::placeholder {
   color: #6E44FF;
 }
 
+.works-card {
+  width: 60%;
+  height: 55vh;
+  background-color: #0D1B3E;
+  border: 2px solid #6e44ff;
+}
+.works-card-img-top {
+  height: 60%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.works-card-body {
+  background-color: #0D1B3E;
+  color: #6E44FF;
+}
+
+.works-card-body h5 {
+  color: #6E44FF;
+}
+
+.works-card-body h5:hover {
+  text-decoration: underline;
+}
+
+.works-card-text {
+  color: #6E44FF;
+  font-style: 13px;
+}
+
+.works-card-body a {
+  color: #6E44FF;
+  background-color: #0D1B3E;
+  border: 2px #6E44FF solid;
+}
+.Total-work-section{
+  background-color: #0D1B3E;
+  width: 100%;
+
+}
+.work-section-row{
+  width: 90%;
+  justify-content: space-around;
+  background-color: #0D1B3E;
+  gap: 40px;
+}
+
 .card {
   width: 30rem;
   height: 60rem;
@@ -579,6 +583,7 @@ textarea::placeholder {
 .card-img-top {
   height: 30rem;
   width: 12rem;
+  object-fit: cover;
 }
 
 .card-body {
@@ -640,17 +645,14 @@ h6 {
   color: #0D1B3E;
   background-color: #936BFF;
   font-size: 18px;
-}
-
+} 
 .Footer-top-section a:hover {
   text-decoration: underline;
   cursor: progress;
 }
-
 .Footer-bottom {
   background-color: #936BFF;
   width: 100%;
-  /* height: 10rem; */
 }
 
 .Footer-bottom p {
@@ -662,8 +664,17 @@ h6 {
 .footer-linkedIn{
   display: none;
 }
-
-@media (max-width:768px) {
+input:-webkit-autofill {
+  background-color: #6e44ff !important;   
+  color: #0D1B3E !important;                
+  transition: background-color 5000s ease-in-out 0s;  /* Prevent flickering of background */
+}
+textarea:-webkit-autofill {
+  background-color: #6e44ff !important;   
+  color: #0D1B3E !important;                
+  transition: background-color 5000s ease-in-out 0s;  
+}
+@media (768px <= width <= 1024px)  {
   .Main-Navbar {
     width: 100%;
     display: flex;
@@ -677,9 +688,11 @@ h6 {
   }
   .Header{
     padding: 0 2rem;
-    height: 80vh;
+    height: 100vh;
+    min-height: 62.5rem;
   }
   .Header h1 {
+    margin-top: 20rem !important;
     font-size: clamp(4.5rem, 8vw, 15rem);
   }
   .home-text {
@@ -702,26 +715,8 @@ h6 {
   width: 100%;
   background-color: #936BFF;
 }
-.footer-icons{
-  margin: 0 auto;
-  width: 100%;
-  padding: 0 0 0 0 ;
-  justify-content: center;
-}
-.footer-github{
-  color: #0D1B3E;
-  display: block;
-}
-.footer-github:hover {
-  color: #ee6c4d;
-  transform: scale(1.1);
-  transition: .3s ease-in-out;
-}
-.footer-linkedIn{
-  display: block;
-}
 .About-heading{
-  text-align: center;
+  text-align: left;
 }
 .About-text{
   font-size: 20px;
@@ -744,12 +739,70 @@ h6 {
 .About-Image {
   position: relative;
   display: inline-block;
+  margin: 0 auto;
+  width: 100%;
 }
 
 .About-Img {
+  margin: 0 auto;   
   display: block;
-  width: 100%;
-  /* height: 45rem; */
   border-radius: 0 10rem;
+}
+
+.React {
+  width: 70vw;
+  height: 5rem;
+  border-radius: 50px;
+  line-height: 5rem;
+  margin: 0  auto;
+  margin-left: 25%;
+  background: linear-gradient(to right, #6E44FF, #ee6c4d);
+
+}
+
+.Javascript {
+  width: 70vw;
+  height: 5rem;
+  border-radius: 50px;
+  margin: 0 auto;
+  margin-left: 15%;
+  line-height: 5rem;
+  background: linear-gradient(to right, #6E44FF, #ee6c4d);
+}
+
+.Bootstrap {
+  width: 70vw;
+  height: 5rem;
+  border-radius: 50px;
+  margin: 0 auto;
+  margin-left: 5%;
+  line-height: 5rem;
+  background: linear-gradient(to right, #6E44FF, #ee6c4d);
+
+}
+.Wordpress {
+  height: 5rem;
+  width: 70vw;
+  border-radius: 50px;
+  line-height: 5rem;
+  margin-left: 15%;
+  background: linear-gradient(to right, #6E44FF, #ee6c4d);
+}
+.Technology {
+  height: 5rem;
+  width: 100%;
+  margin: 0 auto;
+  margin-left: 20px;
+}
+.Technology:hover {
+  transform: scale(1.1);
+  transition: .5s ease-in-out;
+}
+
+.Total-Efficiency {
+  height: 50rem;
+  width: 100%;
+  max-width: 100%;
+  background-color: #0D1B3E;
 }
 }

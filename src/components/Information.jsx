@@ -14,13 +14,13 @@ const About = () => {
         <div >
             <div className="About-section p-5 pb-5">
                 <div className="About-Header">
-                    <h1 className='About-Me ms-5 ps-5' >About Me</h1>
+                    <h1 className='About-Me ms-auto ps-5' >About Me</h1>
                 </div>
                 <div className="About-container">
                     <div className="row px-2  About-container justify-contents-space-around">
-                        <div className=" col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-5 About-col ">
+                        <div className=" col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-6 About-col ">
                             <div className="p-5 pe-0 About-Image  ">
-                                <img src={ImageOne} alt="" className='About-Img' data-aos="fade-up" />
+                                <img src={ImageOne} alt="" loading="lazy" className='About-Img' data-aos="fade-up" />
                                 <div className="about-overlay mt-5 ms-5 pb-5">
                                     <div className="about-overlay-text">
                                         <h2 className='fw-bolder' style={{ color: "#6E44FF", }}>Explore My Work</h2>
@@ -30,7 +30,7 @@ const About = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className=" col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-7 mt-5 About-col">
+                        <div className=" col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-6 mt-5 About-col">
                             <div className="p-4  mt-3 About-para" data-aos="fade-up">
                                 <h1 className='About-heading mb-4'>I am a Frontend Developer <br />Working from Lagos,Nigeria.</h1>
                                 <p className='About-text pe-4' >

@@ -6,6 +6,7 @@ import 'swiper/css/pagination';
 import imageOne from '../images/AboutMe.png';
 import imageTwo from '../images/konga.png'
 import imageThree from '../images/wordpress.png'
+import { BsGithub } from "react-icons/bs";
 
 const Works = () => {
   return (
@@ -25,10 +26,15 @@ const Works = () => {
             <div className="card border-0">
               <img src={imageTwo} className="card-img-top" alt="..." />
               <div className="card-body">
-                <h5 className="card-title">Konga-Clone</h5>
-                <p className="card-text"> Implemented Home-page, Single-product-page, Search-results-page,Shopping-cart-page, Login-page pages and functionlaity to perfrom just like the main Konga website
+                <h5 className="card-title">Konga Replica project</h5>
+                <p className="card-text"> Pages implemented Home page,Single product page,Search results page,Shopping cart page,Login page.
                 </p>
-                <a href="#" className=" btn fw-bold">See project</a>
+                <div className="d-flex justify-content-between px-3">
+                <a href="#" className=" btn fw-bold">Visit</a>
+                <a href="https://github.com/Deelolade/KongaProject " target="_blank" className="btn border-0 fw-bold">
+                <BsGithub className='github' />
+                </a>
+                </div>
               </div>
             </div>
           </SwiperSlide>
@@ -36,9 +42,9 @@ const Works = () => {
             <div className="card border-0">
               <img src={imageThree} className="card-img-top" alt="..." />
               <div className="card-body">
-                <h5 className="card-title">Card title</h5>
-                <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" className=" btn fw-bold">Go somewhere</a>
+                <h5 className="card-title">My Wordpress portfolio</h5>
+                <p className="card-text">Browse my wordpress portfolio and let's create something amazing for your brand with zero lines code!</p>
+                <a href="#" className=" btn fw-bold">Say Hello</a>
               </div>
             </div>
           </SwiperSlide>

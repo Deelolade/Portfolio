@@ -4,8 +4,21 @@ import { useEffect, useState } from 'react';
 
 
 const Form = () => {
+  const [name, setName] = useState('');
+const [email, setEmail] = useState('');
+const handleNameChange = (event) => {
+  setName(event.target.value);
+};
 
-
+// Event handler for email change
+const handleEmailChange = (event) => {
+  setEmail(event.target.value);
+};
+// To clear out any autofilled value when the component loads
+useEffect(() => {
+  setName('');
+  setEmail('');
+}, []);
 const onSubmit = async (event) => {
   event.preventDefault();
   const formData = new FormData(event.target);
@@ -27,7 +40,7 @@ const onSubmit = async (event) => {
   if (res.success) {
     Swal.fire({
       title: 'Successful',
-      text: "I would surely get back to you as soon as I can ",
+      text: "Thanks for your feedback! I really appreciate it.",
       icon: "success",
       customClass: {
         popup: 'custom-swal', 
@@ -35,23 +48,6 @@ const onSubmit = async (event) => {
     });
   }
 };
-const [name, setName] = useState('');
-const [email, setEmail] = useState('');
-
-const handleNameChange = (event) => {
-  setName(event.target.value);
-};
-
-// Event handler for email change
-const handleEmailChange = (event) => {
-  setEmail(event.target.value);
-};
-// To clear out any autofilled value when the component loads
-useEffect(() => {
-  setName('');
-  setEmail('');
-}, []);
-
   return (
     <div>
       <div className="Form-container  pt-5 pb-5">
@@ -60,25 +56,25 @@ useEffect(() => {
             <p className='mt-3'>Got questions or proposal, or just want <br /> to say hello? Go ahead</p>
         </div>
         <form  className='form' onSubmit={onSubmit}>
-        <div className="form-main d-flex mx-auto row justify-content-between">
-        <div className=' form-input mb-2 d-grid  col-sm-12 col-md-12 col-lg-5 '>
+        <div className="form-main d-flex mx-auto row justify-content-between ">
+        <div className=' form-input mb-2 d-grid  col-sm-12 col-md-12 col-lg-6'>
         <label htmlFor="name" className="form-label mt-2">Your Name</label>
         <input type="text" name="Name" id="name" placeholder='Enter Your Name'className='py-2 form-type ' required   onChange={handleNameChange}
-        autoComplete="off" value={name} />
+        autoComplete="new-password" value={name} />
         <hr className='form-rule' />
         </div>
-        <div className=' form-input mb-2  d-grid col-sm-12 col-md-12 col-lg-5'>
+        <div className=' form-input mb-2  d-grid col-sm-12 col-md-12 col-lg-6 '>
         <label htmlFor="email" className="form-label mt-2">Email Address</label>
         <input type="text" name="Email" id="email" placeholder='Enter Your Email Address'required className='pt-2 form-type'  onChange={handleEmailChange}
-        autoComplete="off" value={email} />
+        autoComplete="new-password" value={email} />
         <hr className='form-rule '/>
         </div>
         </div>
         <div className="form-message  pt-5 d-grid ">
           <label htmlFor="message" className='form-label me-auto'>Your Message</label>
           <textarea id="message" rows="3" placeholder="Type your message here..." className='form-type-message' name='Message'></textarea>
-          <hr />
-        <button className=" Form-button mx-auto pt-1  lh-base mt-5" type='submit' >Get In Touch<MdArrowRightAlt className='mb-2 fs-3 form-icon' /></button>
+          <hr className='form-rule' />
+        <button className=" Form-button mx-auto  py-auto  lh-base mt-5" type='submit' >Get In Touch<MdArrowRightAlt className=' fs-3 form-icon' /></button>
         </div>
         </form>
       </div>

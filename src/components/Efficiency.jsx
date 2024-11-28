@@ -4,20 +4,20 @@ const Efficiency = () => {
     return (
     <div >
         <div className="Total-Efficiency p-5 ps-2" >
-            <div className="React  px-5 my-5">
-                <p className='Efficiency-text ps-5 pe-2'>Efficiency In React <span className='React-percent'>90%</span></p>
+            <div className="React  px-4 my-5 d-flex justify-content-between ">
+                <p className=' ps-3 pe-2 fw-bolder fs-5'>Efficiency In React</p><span className='React-percent m-0 fw-bolder fs-5'>90%</span>
             </div>
-            <div className="Javascript  px-5 my-5">
-                <p className='Efficiency-text ps-5 pe-2'>Efficiency In Javascript <span className='Javascript-percent'>90%</span></p>
+            <div className="Javascript  px-4 my-5 d-flex justify-content-between">
+                <p className=' ps-3 pe-2 fw-bolder fs-5'>Efficiency In Javascript </p><span className='Javascript-percent m-0 fw-bolder fs-5'>90%</span>
             </div>
-            <div className="Bootstrap  px-5 my-5">
-                <p className='Efficiency-text ps-5 pe-2'>Efficiency In Boostrap <span className='Bootstrap-percent'>90%</span></p>
+            <div className=" Bootstrap px-4 my-5 d-flex justify-content-between ">
+                <p className=' ps-3 pe-2 fw-bolder fs-5'>Efficiency In Boostrap </p><span className='Bootstrap-percent m-0 fw-bolder fs-5'>90%</span>
             </div>
-            <div className="Wordpress  px-5 my-5">
-                <p className='Efficiency-text ps-5 pe-2'>Efficiency In Wordpress <span className='Wordpress-percent'>90%</span></p>
+            <div className="Wordpress  px-4 my-5  d-flex justify-content-between  ">
+                <p className=' ps-3 pe-2 fw-bolder fs-5'>Efficiency In Wordpress </p><span className='Wordpress-percent m-0 fw-bolder fs-5'>90%</span>
             </div>
-            <div className="Technology  px-5 my-5">
-                <p className='Efficiency-text ps-5 pe-2'>Efficienct In Using Technologies <span className='Technology-percent'>90%</span></p>
+            <div className="Technology  px-4 my-5">
+                <p className='ps-3 pe-2 fw-bolder fs-5'>Exploring New Techs......</p>
             </div>
         </div>
     </div>
