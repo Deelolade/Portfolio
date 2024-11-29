@@ -524,7 +524,7 @@ textarea::placeholder {
 
 .works-card {
   width: 60%;
-  height: 55vh;
+  height: 100%;
   background-color: #0D1B3E;
   border: 2px solid #6e44ff;
 }
@@ -675,6 +675,7 @@ textarea:-webkit-autofill {
   transition: background-color 5000s ease-in-out 0s;  
 }
 @media (768px <= width <= 1024px)  {
+
   .Main-Navbar {
     width: 100%;
     display: flex;
