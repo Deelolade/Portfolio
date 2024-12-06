@@ -50,10 +50,10 @@ const onSubmit = async (event) => {
 };
   return (
     <div>
-      <div className="Form-container  pt-5 pb-5">
-        <div className="Form-header pt-5 mt-5">
-            <h1 className=''>Send me a message!</h1>
-            <p className='mt-3'>Got questions or proposal, or just want <br /> to say hello? Go ahead</p>
+      <div className="Form-container  pt-sm-5 pb-sm-5 py-4">
+        <div className="Form-header pt-sm-5 mt-sm-5">
+            <h1 className='fw-bolder '>Send me a message!</h1>
+            <p className='mt-3 fs-sm-4 fs-5'>Got questions or proposal, or just want <br /> to say hello? Go ahead</p>
         </div>
         <form  className='form' onSubmit={onSubmit}>
         <div className="form-main d-flex mx-auto row justify-content-between ">
@@ -72,7 +72,7 @@ const onSubmit = async (event) => {
         </div>
         <div className="form-message  pt-5 d-grid ">
           <label htmlFor="message" className='form-label me-auto'>Your Message</label>
-          <textarea id="message" rows="3" placeholder="Type your message here..." className='form-type-message' name='Message'></textarea>
+          <textarea id="message" rows="2" placeholder="Type your message here..." className='form-type-message ' name='Message'></textarea>
           <hr className='form-rule' />
         <button className=" Form-button mx-auto  py-auto  lh-base mt-5" type='submit' >Get In Touch<MdArrowRightAlt className=' fs-3 form-icon' /></button>
         </div>

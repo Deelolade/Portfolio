@@ -10,9 +10,9 @@ import { BsGithub } from "react-icons/bs";
 
 const Works = () => {
   return (
-    <div className="Works-section p-5">
+    <div className="Works-section p-sm-5 p-4">
       <div className="Works-Header">
-        <h1 className='Works ms-5 ps-5'>Works</h1>
+        <h1 className='Works ms-sm-5 ps-sm-5 p-0 m-0'> My Works</h1>
       </div>
       <div className="mx-auto slider">
         <Swiper

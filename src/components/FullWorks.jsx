@@ -10,7 +10,7 @@ const FullWorks = () => {
   return (
     <div className='Total-work-section mx-auto py-5'>
       <div className=" row  work-section-row mx-auto">
-        <div className="works-card p-4 rounded-3 col-xs-12 col-md-5 col-lg-4">
+        <div className="works-card p-4 rounded-4 col-xs-12 col-md-5 col-lg-4">
           <img src={imageTwo} className="works-card-img-top" alt="..." />
           <div className="works-card-body">
             <h5 className="works-card-title mt-3">Konga Replica project</h5>
@@ -24,7 +24,7 @@ const FullWorks = () => {
             </div>
           </div>
         </div>
-        <div className="works-card rounded-3 col-xs-12 col-md-5 col-lg-4">
+        <div className="works-card p-4 rounded-4 col-xs-12 col-md-5 col-lg-4">
           <img src={imageTwo} className="works-card-img-top" alt="..." />
           <div className="works-card-body mt-3">
             <h5 className="works-card-title">Konga Replica project</h5>
@@ -38,7 +38,7 @@ const FullWorks = () => {
             </div>
           </div>
         </div>
-        <div className="works-card rounded-3 col-xs-12 col-md-5 col-lg-4">
+        <div className="works-card p-4 rounded-4 col-xs-12 col-md-5 col-lg-4">
           <img src={imageTwo} className="works-card-img-top" alt="..." />
           <div className="works-card-body mt-3">
             <h5 className="works-card-title">Konga Replica project</h5>
@@ -52,7 +52,7 @@ const FullWorks = () => {
             </div>
           </div>
         </div>
-        <div className="works-card rounded-3 col-xs-12 col-md-5 col-lg-4 ">
+        <div className="works-card p-4 rounded-4 col-xs-12 col-md-5 col-lg-4 ">
           <img src={imageTwo} className="works-card-img-top" alt="..." />
           <div className="works-card-body mt-3">
             <h5 className="works-card-title">Konga Replica project</h5>
@@ -66,7 +66,7 @@ const FullWorks = () => {
             </div>
           </div>
         </div>
-        <div className="works-card rounded-3 col-xs-12 col-md-5 col-lg-4 ">
+        <div className="works-card p-4 rounded-4 col-xs-12 col-md-5 col-lg-4 ">
           <img src={imageTwo} className="works-card-img-top" alt="..." />
           <div className="works-card-body mt-3">
             <h5 className="works-card-title">Konga Replica project</h5>
@@ -80,8 +80,8 @@ const FullWorks = () => {
             </div>
           </div>
         </div>
-        <div className="works-card rounded-3 col-xs-12 col-md-5 col-lg-4 ">
-          <img src={imageTwo} className="works-card-img-top" alt="..." />
+        <div className="works-card p-4 rounded-4 col-xs-12 col-md-5 col-lg-4 ">
+=          <img src={imageTwo} className="works-card-img-top" alt="..." />
           <div className="works-card-body mt-3">
             <h5 className="works-card-title">Konga Replica project</h5>
             <p className="works-card-text"> Pages implemented Home page,Single product page,Search results page,Shopping cart page,Login page.

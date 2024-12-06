@@ -37,31 +37,31 @@ const Header = () => {
     })
     return (
         <div className={`sticky-navbar ${show ? 'show' : 'hide'}`} style={{ backgroundColor: "#0D1B3E", maxWidth: "100%" }}>
-            <nav className=" navbar ms-auto pe-4">
-                <div className="Main-Navbar" >
-                    <ul className='d-inline-flex mt-3 Nav-list mx-auto flex-1' >
-                        <li>
+            <nav className=" navbar d-flex justify-content-center ">
+                <div className="Main-Navbar d-flex px-3 justify-content-between " >
+                    <ul className='d-flex my-3 Nav-list justify-content-evenly ' >
+                        <li className='fw-bolder'>
 
                             <Link
-                                className={`px-3 py-2 rounded-5 navbar-brand Nav-items ms-4 me-4 fw-bolder ${clicked === 'Home' ? 'active' : ''}`}
+                                className={` px-sm-3 py-sm-2 fs-sm-4 px-2 fs-5 py-2 px-2 rounded-5 navbar-brand Nav-items  fw-bolder ${clicked === 'Home' ? 'active' : ''}`}
                                 to="/"
                                 onClick={() => handleLinkClick('Home')}
                             >
                                 Home
                             </Link>
                         </li>
-                        <li>
+                        <li className='fw-bolder'>
                             <Link
-                                className={`px-3 py-2 rounded-5 navbar-brand Nav-items ms-5 me-4 fw-bolder ${clicked === 'About' ? 'active' : ''}`}
+                                className={`px-sm-3 py-sm-2 px-2 py-2 fs-sm-4 fs-5 rounded-5 navbar-brand Nav-items  fw-bolder ${clicked === 'About' ? 'active' : ''}`}
                                 to="/about"
                                 onClick={() => handleLinkClick('About')}
                             >
                                 About
                             </Link>
                         </li>
-                        <li>
+                        <li className='fw-bolder'>
                             <Link
-                                className={`px-3 py-2 rounded-5 navbar-brand Nav-items ms-5 me-4 fw-bolder ${clicked === 'Works' ? 'active' : ''}`}
+                                className={`px-sm-3 py-sm-2 px-2 py-2 fs-sm-4 fs-5 rounded-5 navbar-brand Nav-items  fw-bolder ${clicked === 'Works' ? 'active' : ''}`}
                                 to="/works"
                                 onClick={() => handleLinkClick('Works')}
                             >
@@ -69,13 +69,13 @@ const Header = () => {
                             </Link>
                         </li>
                     </ul>
-                    <div className="social-icons d-flex  pt-2" >
-                        <div className="github me-3 ">
+                    <div className="social-icons d-flex  pt-2 justify-content-evenly" >
+                        <div className="github">
                             <a href="https://github.com/deelolade" target='_blank'>
                                 <BsGithub className='github' />
                             </a>
                         </div>
-                        <div className="linkedIn ms-1">
+                        <div className="linkedIn">
                             <a href="https://linkedin.com/in/deelolade" target='_blank'>
                                 <FaLinkedin className='linkedIn' />
                             </a>
