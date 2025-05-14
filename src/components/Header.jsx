@@ -36,9 +36,10 @@ const Header = () => {
         setClicked(pathMap[location.pathname] || '');
     })
     return (
-        <div className={`sticky-navbar ${show ? 'show' : 'hide'}`} style={{ backgroundColor: "#0D1B3E", maxWidth: "100%" }}>
-            <nav className=" navbar d-flex  ms-auto" style={{maxWidth:"1500px" , justifyContent:"space-evenly"}}>
-                <div className="Main-Navbar d-flex px-3 justify-content-between align-items-center  " style={{maxWidth:"1250px"}} >
+        <div className={`sticky-navbar mx-auto ${show ? 'show' : 'hide'}`} style={{ backgroundColor: "#0D1B3E", maxWidth: "100%" }}>
+            <div className="mx-auto  " style={{width:"100vw", maxWidth:"1500px"}}>
+            <nav className=" navbar d-flex  ms-auto" style={{maxWidth:"1500px" , }}>
+                <div className="Main-Navbar d-flex px-3 justify-content-evenly align-items-center  " style={{maxWidth:"1250px"}} >
                     <ul className='d-flex my-3 Nav-list justify-content-evenly ' >
                         <li className='fw-bolder'>
 
@@ -83,6 +84,7 @@ const Header = () => {
                     </div>
                 </div>
             </nav>
+            </div>
         </div>
     );
 };

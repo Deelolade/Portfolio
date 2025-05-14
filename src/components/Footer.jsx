@@ -7,7 +7,7 @@ import { FaLinkedin } from "react-icons/fa";
 const Footer = () => {
   return (
     <div className=' footer container-fluid ps-5'>
-        <div className="Footer-section p-5 row">
+        <div className="Footer-section p-5 row mx-auto" style={{maxWidth:"1500px"}}>
             <hr style={{maxWidth:"100%",backgroundColor:"#6e44ff",height:"1px"}}/>
             <div className="Footer-top-section d-flex row col-sm-12 col-md-12 col-lg-5">
                 <ul className=' lh-lg  Footer-top col-sm-12 col-md-5 col-lg-5'>
