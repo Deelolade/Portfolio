@@ -37,8 +37,8 @@ const Header = () => {
     })
     return (
         <div className={`sticky-navbar ${show ? 'show' : 'hide'}`} style={{ backgroundColor: "#0D1B3E", maxWidth: "100%" }}>
-            <nav className=" navbar d-flex justify-content-center ">
-                <div className="Main-Navbar d-flex px-3 justify-content-between " >
+            <nav className=" navbar d-flex  ms-auto" style={{maxWidth:"1500px" , justifyContent:"space-evenly"}}>
+                <div className="Main-Navbar d-flex px-3 justify-content-between align-items-center  " style={{maxWidth:"1250px"}} >
                     <ul className='d-flex my-3 Nav-list justify-content-evenly ' >
                         <li className='fw-bolder'>
 
@@ -82,7 +82,6 @@ const Header = () => {
                         </div>
                     </div>
                 </div>
-
             </nav>
         </div>
     );
